@@ -1,0 +1,83 @@
+# ──────────────────────────────────────────────────────────────────────────
+# rMATS Mouse Splicing Pipeline — .gitignore
+# ──────────────────────────────────────────────────────────────────────────
+
+# ── Large Data Files (NEVER commit) ──────────────────────────────────────
+data/raw/                          # FASTQ files (~50–100GB)
+data/aligned/                      # BAM files (~8–15GB)
+data/reference/                    # Reference genome, GTF, indices (~50GB)
+results/rmats_output/*             # Ignore all rMATS output files
+
+# ── Exception: Keep result summaries (optional for reproducibility) ────────
+# Uncomment if you want to commit the final rMATS result tables for review:
+# !results/rmats_output/SE.MATS.JC.txt
+# !results/rmats_output/RI.MATS.JC.txt
+# !results/rmats_output/A5SS.MATS.JC.txt
+# !results/rmats_output/A3SS.MATS.JC.txt
+# !results/rmats_output/MXE.MATS.JC.txt
+
+# ── Intermediate/Temporary Files ──────────────────────────────────────────
+tmp/                               # Temporary work directories
+*.tmp
+*.swp                              # vim swap files
+*.swo
+*~                                 # emacs backup files
+.#*                                # emacs lock files
+*.log                              # Log files from scripts
+*.err
+*.out
+
+# ── macOS/Linux System Files ──────────────────────────────────────────────
+.DS_Store                          # macOS folder metadata
+.AppleDouble
+.LSOverride
+.Spotlight-V100
+.Trashes
+Thumbs.db                          # Windows thumbnail cache
+.directory                         # Linux folder settings
+
+# ── Python/R/Conda ───────────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*$py.class
+.Rhistory
+.Rdata
+.RDataTmp
+*.egg-info/
+dist/
+build/
+.conda/
+
+# ── IDE/Editor Artifacts ──────────────────────────────────────────────────
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+.project
+.pydevproject
+.settings/
+
+# ── Jupyter Notebooks (optional — remove if you commit .ipynb files) ─────
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+
+# ── Environment Files (local overrides only) ──────────────────────────────
+.env
+.env.local
+.env.*.local
+
+# ── Pipeline Artifacts ────────────────────────────────────────────────────
+tmp/rmats_tmp/                     # rMATS temporary directory
+logs/                              # Keep if logging, otherwise ignore
+*.err.txt
+*_Progress.txt                     # STAR progress logs
+
+# ── Keep in repo ──────────────────────────────────────────────────────────
+# By default, all non-ignored files are tracked. Key files to commit:
+# ✓ README.md
+# ✓ environment.yml
+# ✓ config/ (samples.tsv, b1.txt, b2.txt)
+# ✓ workflow/ (*.sh scripts)
+# ✓ notebooks/ (R Markdown analysis notebooks)
+# ✓ .gitignore (this file)
+
