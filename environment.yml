@@ -1,0 +1,20 @@
+name: rmats-env
+channels:
+  - bioconda
+  - conda-forge
+  - defaults
+dependencies:
+  # Core bioinformatics tools
+  - python=3.11
+  - star                      # RNA-seq aligner
+  - samtools                  # BAM manipulation
+  - sra-tools                 # SRA download tools
+  # R and packages for analysis
+  - r-base>=4.3
+  - r-tidyverse
+  - r-ggplot2
+  - r-dplyr
+  # pip packages (installed via pip, not conda)
+  - pip
+  - pip:
+    - rmats-turbo>=4.1.0      # rMATS via pip (no conda arm64 package)
