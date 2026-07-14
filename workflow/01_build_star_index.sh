@@ -20,7 +20,7 @@ mkdir -p "$GENOME_DIR"
 #     --genomeDir "$GENOME_DIR" \
 #     --genomeFastaFiles data/reference/Mus_musculus.GRCm38.dna.primary_assembly.fa \
 #     --sjdbGTFfile data/reference/Mus_musculus.GRCm38.102.gtf \
-#     --sjdbOverhang 99
+#     --sjdbOverhang 74
 
 # SPARSE MODE (16GB RAM -- default for local MacBook use)
 # --genomeSAsparseD 3   : sparse suffix array; main RAM reduction flag
@@ -33,7 +33,7 @@ STAR \
     --genomeDir "$GENOME_DIR" \
     --genomeFastaFiles data/reference/Mus_musculus.GRCm38.dna.primary_assembly.fa \
     --sjdbGTFfile data/reference/Mus_musculus.GRCm38.102.gtf \
-    --sjdbOverhang 99 \
+    --sjdbOverhang 74 \
     --genomeSAsparseD 3 \
     --genomeSAindexNbases 12 \
     --limitGenomeGenerateRAM 14000000000
