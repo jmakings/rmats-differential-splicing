@@ -1,0 +1,6 @@
+Sample	star-total_reads	star-mapped	star-mapped_percent	star-uniquely_mapped	star-uniquely_mapped_percent	star-multimapped
+KO_heart_rep1	0.0	0.0	0.0	0.0	0.0	0.0
+KO_heart_rep2	0.0	0.0	0.0	0.0	0.0	0.0
+WT_heart_rep1	0.0	0.0	0.0	0.0	0.0	0.0
+WT_heart_rep2	0.0	0.0	0.0	0.0	0.0	0.0
+test	0.0	0.0	0.0	0.0	0.0	0.0

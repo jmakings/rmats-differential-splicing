@@ -1,0 +1,6 @@
+Module	Section	Sample Name	Source
+STAR	SummaryLog	KO_heart_rep1	/Users/jmakings/Documents/Projects/rmats-differential-splicing/data/aligned/KO_heart_rep1_Log.final.out
+STAR	SummaryLog	KO_heart_rep2	/Users/jmakings/Documents/Projects/rmats-differential-splicing/data/aligned/KO_heart_rep2_Log.final.out
+STAR	SummaryLog	WT_heart_rep1	/Users/jmakings/Documents/Projects/rmats-differential-splicing/data/aligned/WT_heart_rep1_Log.final.out
+STAR	SummaryLog	WT_heart_rep2	/Users/jmakings/Documents/Projects/rmats-differential-splicing/data/aligned/WT_heart_rep2_Log.final.out
+STAR	SummaryLog	test	/Users/jmakings/Documents/Projects/rmats-differential-splicing/data/aligned/test_Log.final.out
